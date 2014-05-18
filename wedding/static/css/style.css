@@ -304,7 +304,7 @@ hr{
 }
 
 .navigation .nav-list{
-	max-width:500px;
+	max-width:600px;
 	height:33px;
 	line-height:25px;
 	margin:0 auto;
@@ -419,7 +419,7 @@ header .head-bar .head-item{
 
 header .head-bar .head-item h3{
 	font-weight:bold;
-	font-size:140px;
+	font-size:80px;
 	text-align:center;
 	color:#666;
 }
@@ -435,9 +435,9 @@ header .head-bar .head-item h4{
 }
 
 header .head-bar .head-item h6{
-	margin-top:45px;
+	margin-top:25px;
 	font-family: 'Times New Roman';
-	font-size:105px;
+	font-size:75px;
 }
 
 header p{
