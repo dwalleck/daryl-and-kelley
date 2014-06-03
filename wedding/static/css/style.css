@@ -28,11 +28,11 @@ p{
 }
 
 a{
-	color:#666;
+	color:#eb76cb;
 }
 
 a:hover{
-	color:#666;
+	color:#f7a253;
 	text-decoration:none;
 }
 
@@ -54,9 +54,10 @@ hr{
 
 /* Basic CSS ends */
 
+
 .container{
 	width:100%;
-	max-width:1050px;
+	max-width:1050px;	
 }
 
 .block{
@@ -78,11 +79,12 @@ hr{
 
 .block-head p{
 	font-size:14px;
-	max-width:450px;
+	max-width:600px;
 	margin:0 auto;
 	line-height:25px;
 	color:#aaa;
 }
+
 
 /* Colors */
 
@@ -355,7 +357,7 @@ header{
 
 header h5{
 	font-family: 'Inder', sans-serif;
-	font-size:15px;
+	font-size:19px;
 	color:#bbb;
 	text-transform:uppercase;
 }
@@ -485,6 +487,77 @@ header .head-button .btn-group .btn{
 }
 
 /* Header Ends */
+
+/* Countdown Starts*/
+
+.countdown .countdown-content {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 4px;
+  /*margin-left: 160px;*/
+ }
+
+.countdown .countdown-content .countdown-inner{
+ 	border: 1px dashed #ddd;
+ 	border-radius: 5px;
+ }
+
+ .countdown .countdown-detail {
+ 	margin: 0px;
+ 	padding: 10px;
+ 	margin-top: 0px;
+ }
+
+.text {
+  /*border-bottom: 1px solid #cb79e6;*/
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.text h2 {
+  color: #cb79e6;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.counter {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 4px;
+  min-height: 150px;
+  text-align: center;
+}
+
+
+.counter h3 {
+  color: #e5e5e5;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+#countdown {
+  color: #ccc;
+}
+
+#countdown span {
+  color: #bbb;
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+/* Countdown Ends*/
 
 /* Works Starts */
 
@@ -837,6 +910,33 @@ div.ppt {
 	margin-right:5px;
 	color:#f2dc4c;
 }
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+  width: 1020px;
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #fff;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
 
 /* Testimonials Ends */
 
@@ -953,7 +1053,7 @@ div.ppt {
 }
 
 .profiles .profile-detail table tr .tborder{
-	border-left:2px solid #f75353;
+	border-left:2px solid #51d466;
 	font-size:12px;
 }
 
@@ -1062,13 +1162,69 @@ div.ppt {
 }	
 	
 /* Love Ends */
+/* Gifts Starts */
+
+.gifts .gifts-item{
+	margin-bottom:40px;
+	position:relative;
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	animation-duration: 1s;
+    animation-delay:0s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay:0s;
+    -ms-animation-duration: 1s;
+    -ms-animation-delay: 0s;
+    -o-animation-duration: 1s;    
+    -o-animation-delay: 0s; 
+} 
+
+.gifts .gifts-item img{
+	border-radius:5px;
+}
+
+.gifts .gifts-item h4{
+	font-weight:bold;
+	margin-top:20px;
+}
+
+.gifts .gifts-item p{
+	padding:3px;
+	font-size:13px;
+}
+
+.gifts .gifts-item .gifts-social{
+	display:none;
+	position:absolute;
+	width:100%;
+	bottom:90px;
+}
+
+.gifts .gifts-item .gifts-social a i{
+	height:30px;
+	width:30px;
+	line-height:30px;
+	border-radius:100px;
+	color:#fff;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:60px;
+}
+
+div.ppt {
+   display:none !important;
+}
+
+/* Gifts Ends */
 
 /* Contact Starts */
 
 .contact h3{
 	width:500px;
 	margin:0 auto;
-	font-size:60px;
+	font-size:40px;
 	margin-bottom:50px;
 	text-align:center;
 	font-weight:bold;
@@ -1090,8 +1246,8 @@ div.ppt {
 	position:relative;
 	top:-8px;
 	left:0;
-	margin-right:10px;
-	font-size:40px;
+	margin-right:20px;
+	font-size:30px;
 }
 
 .contact .contact-item{
@@ -1244,7 +1400,7 @@ footer p{
 	bottom: 0;
 	right: 0;
 	z-index: 104400;
-	background: #ef4848; 
+	background: #cb79e6; 
 }
 
 .gotop a, .gotop a:visited{
